@@ -1,0 +1,24 @@
+{
+  "name": "nusic",
+  "version": "0.0.1",
+  "authors": [
+    "Sandip Chitale <sandipchitale@gmail.com>"
+  ],
+  "description": "nusic Neel's Music Website",
+  "main": "index.html",
+  "license": "SELF",
+  "private": true,
+  "dependencies": {
+    "angular": "1.3.15",
+    "bootstrap": "3.3.5",
+    "jquery": "2.1.4",
+    "ui-router": "0.2.15"
+  },
+  "overrides": {
+    "angular": {
+      "dependencies": {
+        "jquery": "~2.1.3"
+      }
+    }
+  }
+}

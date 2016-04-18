@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="NusicApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="icons/nusicfavicon.ico">
+
+    <title>nusic - Neel Chitale</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/nusic.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body ng-controller="NusicController as vm">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="row">
+          <div class="navbar-header col-xs-6">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="images/neelchitalelogo.jpg" style="max-height: 28px;"></img></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse col-xs-6 pull-right">
+            <ul class="nav navbar-nav">
+              <li ui-sref-active="active"><a ui-sref="home"><i class="glyphicon glyphicon-home"></i></a></li>
+              <li ui-sref-active="active"><a ui-sref="music">Music</a></li>
+              <li ui-sref-active="active"><a ui-sref="events">Events</a></li>
+              <li ui-sref-active="active"><a ui-sref="biography">Biography</a></li>
+            </ul>
+          </div>
+        </div>
+      <div>
+    </nav>
+
+    <div ui-view></div>
+
+    <!-- FOOTER -->
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container">
+        <p class=" navbar-text pull-right">&copy; nusic &middot; Neel Chitale</p>
+      </div>
+    </nav>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="components/jquery/dist/jquery.min.js"></script>
+    <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="components/angular/angular.min.js"></script>
+    <script src="components/ui-router/release/angular-ui-router.min.js"></script>
+    <script src="js/nusicApp.js"></script>
+  </body>
+</html>
