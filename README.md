@@ -1,6 +1,6 @@
 This is Neel's Music Website.
 
-`nusic`  - Neel's new music
+`nusic`  - Neel Chitale's new music
 
 `n...c`  - Neel Chitale
 
