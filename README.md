@@ -6,10 +6,13 @@ This is Neel's Music Website.
 
 `nu...`  - New
 
-`.us..`  - USA and us
+`.us..`  - USA or us
 
 `.u...`  - you
 
-`...i.`  - India and I
+`...i.`  - India or I
 
-`.u.i.`  - USA+India, you and I 
+`.u.i.`  - you and I 
+
+`.usi.`  - USA+India or you and I 
+
