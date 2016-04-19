@@ -8,6 +8,8 @@ This is Neel's Music Website.
 
 `.us..`  - USA and us
 
+`.u...`  - you
+
 `...i.`  - India and I
 
 `.u.i.`  - USA+India, you and I 
