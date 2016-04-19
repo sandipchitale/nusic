@@ -14,5 +14,5 @@ This is Neel's Music Website.
 
 `.u.i.`  - you and I 
 
-`.usi.`  - USA+India or you and I 
+`.usi.`  - USA+India
 
