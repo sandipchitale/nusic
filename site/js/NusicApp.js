@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('NusicApp', ['ui.router'])
+        .module('NusicApp', ['ngAnimate', 'ngSanitize', 'ui.router', 'mgcrea.ngStrap.alert'])
         .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
               $urlRouterProvider.otherwise(function ($injector) {
                   $injector.get('$state').go('home');
@@ -28,5 +28,10 @@
           }])
           .controller('NusicController', [function() {
               var vm = this;
+
+              vm.modal = {
+                "title": "Title",
+                "content": "Hello Modal<br />This is a multiline message!"
+              };
           }]);
 }());
