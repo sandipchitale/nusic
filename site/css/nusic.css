@@ -13,3 +13,7 @@ body {
   color: #BBB;
   background-color: #000;
 }
+
+code {
+  color: #000 !important;
+}

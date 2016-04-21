@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('NusicApp', ['ngAnimate', 'ngSanitize', 'ui.router', 'mgcrea.ngStrap.alert'])
+        .module('NusicApp', ['ngAnimate', 'ngSanitize', 'ui.router', 'mgcrea.ngStrap.alert', 'mgcrea.ngStrap.popover'])
         .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
               $urlRouterProvider.otherwise(function ($injector) {
                   $injector.get('$state').go('home');
