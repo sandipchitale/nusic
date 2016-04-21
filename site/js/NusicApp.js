@@ -26,12 +26,26 @@
                       templateUrl: 'views/biography.html'
                   });
           }])
-          .controller('NusicController', [function() {
+          .config(['$sceProvider', function($sceProvider) {
+            // Completely disable SCE.  For demonstration purposes only!
+            // Do not use in new projects.
+            $sceProvider.enabled(false);
+          }])
+          .controller('NusicController', ['$modal', function($modal) {
               var vm = this;
-
-              vm.modal = {
-                "title": "Title",
-                "content": "Hello Modal<br />This is a multiline message!"
+              vm.showVideo = function(videoHref) {
+                $modal({
+                  contentTemplate: "views/video.html",
+                  backdrop: "static",
+                  controller: "VideoController",
+                  controllerAs: "vm",
+                  locals: {videoHref: videoHref},
+                  show: true
+                });
               };
+          }])
+          .controller('VideoController', ['videoHref', function(videoHref) {
+              var vm = this;
+              vm.videoHref = videoHref;
           }]);
 }());
