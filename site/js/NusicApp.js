@@ -31,7 +31,7 @@
             // Do not use in new projects.
             $sceProvider.enabled(false);
           }])
-          .controller('NusicController', ['$modal', function($modal) {
+          .controller('NusicController', ['$modal', '$window', function($modal, $window) {
               var vm = this;
               vm.showVideo = function(videoHref) {
                 $modal({
@@ -42,6 +42,10 @@
                   locals: {videoHref: videoHref},
                   show: true
                 });
+              };
+
+              vm.showVideoInBlank = function(videoHref) {
+                $window.open(videoHref, '_blank')
               };
           }])
           .controller('VideoController', ['videoHref', function(videoHref) {
