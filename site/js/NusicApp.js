@@ -21,6 +21,10 @@
                       url: '/events',
                       templateUrl: 'views/events.html'
                   })
+                  .state('photos', {
+                      url: '/photos',
+                      templateUrl: 'views/photos.html'
+                  })
                   .state('biography', {
                       url: '/biography',
                       templateUrl: 'views/biography.html'
